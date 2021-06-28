@@ -4,7 +4,6 @@ import pytesseract
 from pytesseract import Output
 import cv2
 import numpy as np
-import sys
 
 from tqdm import tqdm
 import shutil
@@ -49,7 +48,6 @@ def add_text(image, result, txt, img_num):
     im = Image.fromarray(image)
     im.save("all_boxes_with_text_{}.jpg".format(img_num))  
     return
-  
   
 def draw_squares(image, result):
     """
@@ -188,7 +186,6 @@ def join_ocr_title(poss_title):
     return q_title
   
 # source: https://stackoverflow.com/a/62037708
-import pprint
 from googleapiclient.discovery import build
 
 # Build a service object for interacting with the API. Visit
@@ -208,7 +205,7 @@ def google_search(search_term, api_key, cse_id, **kwargs):
     except KeyError:
         return res
       
-  def get_n_paper_info(query_result, n):
+def get_n_paper_info(query_result, n):
     info_dict_lst = []
     for i in range(n):    
         info_dict = {}
@@ -235,7 +232,6 @@ def google_search(search_term, api_key, cse_id, **kwargs):
         info_dict_lst.append(info_dict)
     return info_dict_lst
   
-  
 def get_best_paper_info(info_dict_lst):
     best_score = 0
     best_dict = info_dict_lst[0]
@@ -250,7 +246,7 @@ def get_best_paper_info(info_dict_lst):
             best_score = score
     return best_dict
   
-  
+    
 ################### END OF FUNCTIONS #####################
 ################### MAIN BEGINS BELOW #####################
 
@@ -352,3 +348,4 @@ if bool(new_dir) == True:
 # clean up
 if os.path.exists("page_1.jpg"): 
     os.remove("page_1.jpg")
+
