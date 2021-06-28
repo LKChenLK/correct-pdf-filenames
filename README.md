@@ -2,7 +2,7 @@
 
 This is a tool that helps rename the papers downlowded from the internet with correct filenames and relevant information (year published, authors). Currently the accuracy is still not high (3/5 are correct for the testing papers), but the whole pipeline is complete and can be easily modified or optimized.
 
-Currently the code only works when you place all the papers to rename in folder named "papers" (case sensitive!) under the same directory as the code. There are a couple of sample papers in the folder which you can replace with your own papers to rename. 
+Currently the code only works when you place all the papers you want to rename in a folder named "papers" (case sensitive!) under the same directory as the code. There are a couple of sample papers in the folder, which you can replace with your own papers to rename. 
 
 The program will generate a new folder under the same directory as ```main.py```. You will be asked to name the subfolder during runtime. The directory tree is as shown:
 
