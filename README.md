@@ -40,7 +40,7 @@ Please refer to ```requirements.txt```, and run ```pip3 install -r requirements.
 <details>
   <summary>Click to expand</summary>
 
-Here are some possible problems you may encounter:  
+Here are some possible problems you may encounter if you're running the code with a Jupyter notebook:  
 Problem with importing cv2
 - check if juyter is installed in virtual env
 - check if 
@@ -48,7 +48,7 @@ Problem with importing cv2
 import sys
 sys.path
 ```
-in both jupyter notebook and in terminal report the same path
+in both Jupyter and in the terminal report the same path
 
 - if error message is ```ImportError: libGL.so.1: cannot open shared object file: No such file or directory```:  
 do in terminal:
