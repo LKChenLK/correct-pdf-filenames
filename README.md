@@ -28,10 +28,10 @@ This project
 ### Dependencies
 Download and install before running the code
 - [Tesseract](https://github.com/tesseract-ocr/tesseract/releases)
-    - Mac: brew install tesseract 
+    - Mac: ```brew install tesseract```
 - Poppler
     - Windows: download [here](), install, add to PATH
-    - Mac: brew install poppler
+    - Mac: ```brew install poppler```
 
 ### Python dependencies 
 Please refer to ```requirements.txt```, and run ```pip3 install -r requirements.txt``` in your terminal to install all packages at once. You may want to create a virtual environment first.
