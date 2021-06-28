@@ -27,7 +27,7 @@ This project
 
 ```
 
-#### Dependencies
+## Dependencies
 Download and install before running the code
 - [Tesseract](https://github.com/tesseract-ocr/tesseract/releases)
     - Mac: brew install tesseract 
@@ -35,7 +35,7 @@ Download and install before running the code
     - Windows: download [here](), install, add to PATH
     - Mac: brew install poppler
 
-#### Python dependencies 
+## Python dependencies 
 Please refer to ```requirements.txt```, and run ```pip3 install -r requirements.txt``` in your terminal to install all packages at once. You may want to create a virtual environment first.
 
 #### Troubleshooting for installing python packages
@@ -63,7 +63,7 @@ source: https://github.com/conda-forge/pygridgen-feedstock/issues/10
 </details>
 
   
-#### Google API key
+## Google API key
 If you want to run this code on your own computer, you will need to sign up for a google api key for yourself! For the code to read your API key, please save it as a ```.env``` file under the same directory as the ```main.py``` file (refer to directory tree above) like so:
 ```
 GOOGLE_API_KEY="your api key here"
