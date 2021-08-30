@@ -1,4 +1,4 @@
-# pdf-ocr
+# correct pdf filenames
 
 This is a tool that helps rename the papers downlowded from the internet with correct filenames and relevant information (year published, authors). Currently the accuracy is still not high (3/5 are correct for the testing papers), but the whole pipeline is complete and can be easily modified or optimized.
 
